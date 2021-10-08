@@ -1,0 +1,72 @@
+@import 'variables';
+
+@mixin tablet {
+    @media (min-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (min-width: #{$mobile}) {
+        @content;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $mainFont;
+    font-weight: $mainWeight;
+}
+
+body {
+    background: var(--main-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body.firstTheme {
+    --main-background: #3A4663;
+    --toggle-background: #242D44;
+    --screen-background: #181F33;
+    --key-background-first: #647198;
+    --key-shadow-first: #414E73;
+    --key-background-red: #F96B5B;
+    --key-shadow-red: #93261A;
+    --key-background: #EAE3DC;
+    --key-shadow: #B3A497;
+    --text-dark: #434A59;
+    --text-light: #FFFFFF;
+}
+
+body.secondTheme {
+    --main-background: #E6E6E6;
+    --toggle-background: #D2CDCD;
+    --screen-background: #FFFFFF;
+    --key-background-first: #378187;
+    --key-shadow-first: #1B6066;
+    --key-background-red: #C85402;
+    --key-shadow-red: #873901;
+    --key-background: #E5E4E1;
+    --key-shadow: #A79E91;
+    --text-dark: #36362C;
+    --text-light: #FFFFFF;
+}
+
+body.thirdTheme {
+    --main-background: #17062A;
+    --toggle-background: #1E0936;
+    --screen-background: #1E0936;
+    --key-background-first: #56077C;
+    --key-shadow-first: #BE15F4;
+    --key-background-blue: #00DED0;
+    --key-shadow-blue: #6CF9F1;
+    --key-background: #331C4D;
+    --key-shadow: #881C9E;
+    --text-yellow-light: #FFE53D;
+    --text-dark: #1A2327;
+    --text-light: #FFFFFF;
+}
