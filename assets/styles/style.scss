@@ -74,8 +74,11 @@ body {
 .container {
     width: 540px;
     padding: 16px;
-    margin-left: 80px;
-    margin-top: 80px;
+    margin-top: 6%;
+    margin-left: 10%;
+    @include tablet {
+        margin-right: 12%;
+    }
 }
 
 .header {
@@ -145,6 +148,7 @@ h1 {
     border-radius: 50px;
     top: 5px;
     transition: all .3s ease;
+    cursor: $customCursor;
 }
 
 .toggle-wrapper input:nth-child(1):checked ~ .toggle-slider{
@@ -179,12 +183,111 @@ h1 {
     margin-bottom: 24px;
     border-radius: 0px 0px 8px 8px;
     color: $basicWhiteColor;
-    padding-top: 8px;
+    padding-top: 2px;
+    padding-right: 24px;
     height: 80px;
     span {
         font-size: $resultInputFontSize;
         white-space: nowrap;
     }
 }
+//Keypad styling
+.keypad {
+    background: #242D44;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    padding: 24px;
+    column-gap: 20px;
+    row-gap: 24px;
+    border-radius: 8px;
+    grid-template-areas:
+    "btn btn btn btn"
+    "btn btn btn btn"
+    "btn btn btn btn"
+    "btn btn btn btn"
+    "reset reset equal equal";
+}
 
+#btn-reset {
+    grid-area: reset;
+}
 
+#calculate {
+    width: 227px;
+    height: 64px;
+    font-size: $delResEqualFontSize;
+    grid-area: equal;
+    color: $basicWhiteColor;
+    background-color: #D03F2F;
+    box-shadow: 0px 4px 0px #93261A;
+    border-radius: 8px;
+    border: none;
+    cursor: $customCursor;
+    &:hover {
+        background-color: #F96B5B;
+    }
+    &:active {
+        box-shadow: 0px 3px 0px #93261A;
+    }
+}
+
+#btn-reset {
+    background-color: #647198;
+    color: $basicWhiteColor;
+    font-size: $delResEqualFontSize;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 0px #414E73;
+    cursor: $customCursor;
+    &:hover{
+        background-color: #A2B2E1;
+    }
+    &:active {
+        box-shadow: 0px 3px 0px #414E73;;
+    }
+}
+
+.btn {
+    background-color: #EAE3DC;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 0px #B3A497;
+    &:active {
+        box-shadow: 0px 3px 0px #B3A497;
+    }
+}
+
+.btn.btn-num {
+    width: 101px;
+    height: 64px;
+    color: #434A59;
+    font-size: $resultInputFontSizeMobile;
+    font-weight: $mainWeight;
+    cursor: $customCursor;
+    &:hover {
+        background-color: $basicWhiteColor;
+    }
+}
+
+.btn.btn-symb {
+    color: #434A59;
+    font-size: $resultInputFontSizeMobile;
+    font-weight: $mainWeight;
+    cursor: $customCursor;
+    &:hover {
+        background-color: $basicWhiteColor;
+    }
+}
+
+#btn-del {
+    color: $basicWhiteColor;
+    background-color: #647198;
+    box-shadow: 0px 4px 0px #414E73;
+    cursor: $customCursor;
+    &:hover{
+        background-color: #A2B2E1;
+    }
+    &:active {
+        box-shadow: 0px 3px 0px #414E73; 
+    }
+}
