@@ -26,18 +26,124 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: ease 0.5s;
 }
 
+//First Theme parent inherit
 .firstTheme {
     
 }
-
+//Second Theme Styling
 .secondTheme {
     background-color: $mainBackgroundSecondTheme;
+    .container {
+        h1, p, span {
+            color: $textDarkSecondTheme;
+        }
+    }
+    .toggle-wrapper {
+        background-color: $toggleBackgroundSecondTheme;
+    }
+    .toggle-slider {
+        background-color: $keyBackgroundRedSecondTheme;
+        &:hover {
+            background-color: $lightThemeSlideHover;
+        }
+    }
+    #display-container, #display-second {
+        background-color: $screenBackgroundSecondTheme;
+    }
+    #display {
+        color: $textDarkSecondTheme;
+    }
+    .keypad {
+        background-color: $toggleBackgroundSecondTheme;
+        .btn {
+            background-color: $keyBackgroundSecondTheme;
+            box-shadow: 0px 4px 0px $keyShadowSecondTheme;
+            &:active {
+                box-shadow: 0px 3px 0px $keyShadowSecondTheme;
+            }
+        }
+        #btn-del, #btn-reset {
+            background-color: $keyBackgroundFirstSecondTheme;
+            box-shadow: 0px 4px 0px $keyShadowFirstSecondTheme;
+            &:active {
+                box-shadow: 0px 3px 0px $keyShadowFirstSecondTheme;
+            }
+            &:hover {
+                background-color: $deleteResetButtonHoverSecondTheme;
+            }
+        }
+        #calculate {
+            background-color: $keyBackgroundRedSecondTheme;
+            box-shadow: 0px 4px 0px $keyShadowRedSecondTheme;
+            &:active {
+                box-shadow: 0px 3px 0px $keyShadowRedSecondTheme;
+            }
+            &:hover {
+                background-color: $calculateButtonHoverSecondTheme;
+            }
+        }
+    }
 }
-
+//Third Theme Styling
 .thirdTheme {
-   background-color: $mainBackgroundThirdTheme; 
+   background-color: $mainBackgroundThirdTheme;
+   .container {
+       h1, p, span {
+           color: $textYellowLight;
+       }
+   }
+   .toggle-wrapper {
+       background-color: $toggleBackgroundThirdTheme;
+   }
+   .toggle-slider {
+       background-color: $keyBackgroundBlue;
+       &:hover {
+           background-color: $toggleSliderHoverThirdTheme;
+       }
+   }
+   #display-container, #display-second {
+       background-color: $screenBackgroundThirdTheme;
+   }
+   .keypad {
+       background-color: $screenBackgroundThirdTheme;
+       .btn.btn-num, .btn.btn-symb {
+           color: $textYellowLight;
+           &:hover {
+               background-color: $numberSymbolsHoverColor;
+           }
+       }
+       .btn {
+           background-color: $keyBackgroundThirdTheme;
+           box-shadow: 0px 4px 0px $keyShadowThirdTheme;
+           &:active {
+                box-shadow: 0px 3px 0px $keyShadowThirdTheme;
+           }
+       }
+       #btn-del, #btn-reset {
+           background-color: $keyBackgroundFirstThirdTheme;
+           box-shadow: 0px 4px 0px $keyShadowFirstThirdTheme;
+           &:active {
+                box-shadow: 0px 3px 0px $keyShadowFirstThirdTheme;
+           }
+           &:hover {
+               background-color: $resetDelPurpleHoverColor;
+           }
+       }
+       #calculate {
+           background-color: $keyBackgroundBlue;
+           box-shadow: 0px 4px 0px $keyBackgroundBlueShadow;
+           color: $calculateColor;
+           &:active {
+                box-shadow: 0px 3px 0px $keyBackgroundBlueShadow;
+           }
+           &:hover {
+               background-color: $toggleSliderHoverThirdTheme;
+           }
+       }
+   }
 }
 
 .container {
@@ -50,7 +156,7 @@ body {
     @include mobile {
         margin-top: 22px;
         width: 90%;
-        margin-right: 38px;
+        margin-right: 40px;
         overflow-x: hidden;
     }
 }
@@ -131,11 +237,14 @@ h1 {
     position: absolute;
     width: 16px;
     height: 16px;
-    background: #F96B5B;
+    background: $darkThemeSliderColor;
     border-radius: 50px;
     top: 5px;
     transition: all .3s ease;
     cursor: $customCursor;
+    &:hover {
+        background-color: $darkThemeSliderHover;
+    }
 }
 
 .toggle-wrapper input:nth-child(1):checked ~ .toggle-slider{
@@ -212,6 +321,7 @@ h1 {
 
 #btn-reset {
     grid-area: reset;
+    padding-top: 2px;
     @include mobile {
         width: 133px;
     }
@@ -220,6 +330,7 @@ h1 {
 #calculate {
     width: 227px;
     height: 64px;
+    padding-top: 2px;
     font-size: $delResEqualFontSize;
     grid-area: equal;
     color: $basicWhiteColor;
@@ -313,4 +424,9 @@ h1 {
         width: 60px;
         font-size: $delResEqualFontSizeMobile;
     }
+}
+
+#btn-reset, #btn-del {
+    font-size: 20px;
+    padding-top: 6px;
 }

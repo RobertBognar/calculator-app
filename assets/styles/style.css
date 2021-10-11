@@ -22,14 +22,159 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
 }
 
 .secondTheme {
   background-color: #E6E6E6;
 }
 
+.secondTheme .container h1, .secondTheme .container p, .secondTheme .container span {
+  color: #36362C;
+}
+
+.secondTheme .toggle-wrapper {
+  background-color: #D2CDCD;
+}
+
+.secondTheme .toggle-slider {
+  background-color: #C85402;
+}
+
+.secondTheme .toggle-slider:hover {
+  background-color: #FF8A38;
+}
+
+.secondTheme #display-container, .secondTheme #display-second {
+  background-color: #FFFFFF;
+}
+
+.secondTheme #display {
+  color: #36362C;
+}
+
+.secondTheme .keypad {
+  background-color: #D2CDCD;
+}
+
+.secondTheme .keypad .btn {
+  background-color: #E5E4E1;
+  -webkit-box-shadow: 0px 4px 0px #A79E91;
+          box-shadow: 0px 4px 0px #A79E91;
+}
+
+.secondTheme .keypad .btn:active {
+  -webkit-box-shadow: 0px 3px 0px #A79E91;
+          box-shadow: 0px 3px 0px #A79E91;
+}
+
+.secondTheme .keypad #btn-del, .secondTheme .keypad #btn-reset {
+  background-color: #378187;
+  -webkit-box-shadow: 0px 4px 0px #1B6066;
+          box-shadow: 0px 4px 0px #1B6066;
+}
+
+.secondTheme .keypad #btn-del:active, .secondTheme .keypad #btn-reset:active {
+  -webkit-box-shadow: 0px 3px 0px #1B6066;
+          box-shadow: 0px 3px 0px #1B6066;
+}
+
+.secondTheme .keypad #btn-del:hover, .secondTheme .keypad #btn-reset:hover {
+  background-color: #62B5BC;
+}
+
+.secondTheme .keypad #calculate {
+  background-color: #C85402;
+  -webkit-box-shadow: 0px 4px 0px #873901;
+          box-shadow: 0px 4px 0px #873901;
+}
+
+.secondTheme .keypad #calculate:active {
+  -webkit-box-shadow: 0px 3px 0px #873901;
+          box-shadow: 0px 3px 0px #873901;
+}
+
+.secondTheme .keypad #calculate:hover {
+  background-color: #FF8A38;
+}
+
 .thirdTheme {
   background-color: #17062A;
+}
+
+.thirdTheme .container h1, .thirdTheme .container p, .thirdTheme .container span {
+  color: #FFE53D;
+}
+
+.thirdTheme .toggle-wrapper {
+  background-color: #1E0936;
+}
+
+.thirdTheme .toggle-slider {
+  background-color: #00DED0;
+}
+
+.thirdTheme .toggle-slider:hover {
+  background-color: #93FFF8;
+}
+
+.thirdTheme #display-container, .thirdTheme #display-second {
+  background-color: #1E0936;
+}
+
+.thirdTheme .keypad {
+  background-color: #1E0936;
+}
+
+.thirdTheme .keypad .btn.btn-num, .thirdTheme .keypad .btn.btn-symb {
+  color: #FFE53D;
+}
+
+.thirdTheme .keypad .btn.btn-num:hover, .thirdTheme .keypad .btn.btn-symb:hover {
+  background-color: #6C34AC;
+}
+
+.thirdTheme .keypad .btn {
+  background-color: #331C4D;
+  -webkit-box-shadow: 0px 4px 0px #881C9E;
+          box-shadow: 0px 4px 0px #881C9E;
+}
+
+.thirdTheme .keypad .btn:active {
+  -webkit-box-shadow: 0px 3px 0px #881C9E;
+          box-shadow: 0px 3px 0px #881C9E;
+}
+
+.thirdTheme .keypad #btn-del, .thirdTheme .keypad #btn-reset {
+  background-color: #56077C;
+  -webkit-box-shadow: 0px 4px 0px #BE15F4;
+          box-shadow: 0px 4px 0px #BE15F4;
+}
+
+.thirdTheme .keypad #btn-del:active, .thirdTheme .keypad #btn-reset:active {
+  -webkit-box-shadow: 0px 3px 0px #BE15F4;
+          box-shadow: 0px 3px 0px #BE15F4;
+}
+
+.thirdTheme .keypad #btn-del:hover, .thirdTheme .keypad #btn-reset:hover {
+  background-color: #8631AF;
+}
+
+.thirdTheme .keypad #calculate {
+  background-color: #00DED0;
+  -webkit-box-shadow: 0px 4px 0px #6CF9F1;
+          box-shadow: 0px 4px 0px #6CF9F1;
+  color: #1A2327;
+}
+
+.thirdTheme .keypad #calculate:active {
+  -webkit-box-shadow: 0px 3px 0px #6CF9F1;
+          box-shadow: 0px 3px 0px #6CF9F1;
+}
+
+.thirdTheme .keypad #calculate:hover {
+  background-color: #93FFF8;
 }
 
 .container {
@@ -48,7 +193,7 @@ body {
   .container {
     margin-top: 22px;
     width: 90%;
-    margin-right: 38px;
+    margin-right: 40px;
     overflow-x: hidden;
   }
 }
@@ -154,12 +299,16 @@ h1 {
   position: absolute;
   width: 16px;
   height: 16px;
-  background: #F96B5B;
+  background: #D03F2F;
   border-radius: 50px;
   top: 5px;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
   cursor: url("../images/pointer.png"), pointer;
+}
+
+.toggle-slider:hover {
+  background-color: #F96B5B;
 }
 
 .toggle-wrapper input:nth-child(1):checked ~ .toggle-slider {
@@ -242,6 +391,7 @@ h1 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: reset;
+  padding-top: 2px;
 }
 
 @media (max-width: 375px) {
@@ -253,6 +403,7 @@ h1 {
 #calculate {
   width: 227px;
   height: 64px;
+  padding-top: 2px;
   font-size: 20px;
   -ms-grid-row: 5;
   -ms-grid-column: 3;
@@ -381,5 +532,10 @@ h1 {
     width: 60px;
     font-size: 16px;
   }
+}
+
+#btn-reset, #btn-del {
+  font-size: 20px;
+  padding-top: 6px;
 }
 /*# sourceMappingURL=style.css.map */

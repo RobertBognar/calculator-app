@@ -25,6 +25,8 @@ $keyShadowRed: #93261A;
 $keyBackground: #EAE3DC;
 $keyShadow: #B3A497;
 $textDark: #434A59;
+$darkThemeSliderColor: #D03F2F;
+$darkThemeSliderHover: #F96B5B;
 
 //Second Theme Colors
 $mainBackgroundSecondTheme: #E6E6E6;
@@ -33,10 +35,13 @@ $screenBackgroundSecondTheme: #FFFFFF;
 $keyBackgroundFirstSecondTheme: #378187;
 $keyShadowFirstSecondTheme: #1B6066;
 $keyBackgroundRedSecondTheme: #C85402;
+$lightThemeSlideHover: #FF8A38;
 $keyShadowRedSecondTheme: #873901;
 $keyBackgroundSecondTheme: #E5E4E1;
 $keyShadowSecondTheme: #A79E91;
 $textDarkSecondTheme: #36362C;
+$deleteResetButtonHoverSecondTheme: #62B5BC;
+$calculateButtonHoverSecondTheme: #FF8A38;
 
 //Third Theme Colors
 $mainBackgroundThirdTheme: #17062A;
@@ -45,17 +50,21 @@ $screenBackgroundThirdTheme: #1E0936;
 $keyBackgroundFirstThirdTheme: #56077C;
 $keyShadowFirstThirdTheme: #BE15F4;
 $keyBackgroundBlue: #00DED0;
+$keyBackgroundBlueShadow: #6CF9F1;
+$toggleSliderHoverThirdTheme: #93FFF8;
 $keyShadowBlue: #6CF9F1;
 $keyBackgroundThirdTheme: #331C4D;
 $keyShadowThirdTheme: #881C9E;
 $textYellowLight: #FFE53D;
 $textDarkThirdTheme: #1A2327;
+$numberSymbolsHoverColor: #6C34AC;
+$resetDelPurpleHoverColor: #8631AF;
+$calculateColor: #1A2327;
 
 //Custom cursor image
 $customCursor: url("../images/pointer.png"), pointer;
 
 //Responsivnes
 $tablet: 768px;
-$largeMobile: 600px;
 $mobile: 375px;
 
