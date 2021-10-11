@@ -179,6 +179,7 @@ h1 {
     color: $basicWhiteColor;
     margin: 0;
     font-size: $calcFontSize;
+    transition: ease 0.5s;
 }
 
 .toggle-container {
@@ -186,6 +187,7 @@ h1 {
     justify-content: space-between;
     color: $basicWhiteColor;
     font-size: $themeFontSize;
+    transition: ease 0.5s;
     p {
         margin-top: 10px;
         margin-right: 10px;
@@ -201,6 +203,7 @@ h1 {
     height: 26px;
     border-radius: 50px;
     background: #242D44;
+    transition: ease 0.5s;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -240,6 +243,7 @@ h1 {
     width: 16px;
     height: 16px;
     background: $darkThemeSliderColor;
+    transition: ease 0.5s;
     border-radius: 50px;
     top: 5px;
     transition: all .3s ease;
@@ -270,6 +274,7 @@ h1 {
     width: 100%;
     min-height: 56px;
     background: #181F33;
+    transition: ease 0.5s;
     box-sizing: border-box;
     text-align: right;
     padding-top: 24px;
@@ -284,6 +289,7 @@ h1 {
     margin-bottom: 24px;
     border-radius: 0px 0px 12px 12px;
     color: $basicWhiteColor;
+    transition: ease 0.5s;
     padding-top: 2px;
     padding-right: 24px;
     height: 80px;
@@ -302,6 +308,7 @@ h1 {
 //Keypad styling
 .keypad {
     background: #242D44;
+    transition: ease 0.5s;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     padding: 24px;
@@ -336,6 +343,7 @@ h1 {
     font-size: $delResEqualFontSize;
     grid-area: equal;
     color: $basicWhiteColor;
+    transition: ease 0.5s;
     background-color: #D03F2F;
     box-shadow: 0px 4px 0px #93261A;
     border-radius: 8px;
@@ -355,6 +363,7 @@ h1 {
 
 #btn-reset {
     background-color: #647198;
+    transition: ease 0.5s;
     color: $basicWhiteColor;
     font-size: $delResEqualFontSize;
     border: none;
@@ -374,6 +383,7 @@ h1 {
 
 .btn {
     background-color: #EAE3DC;
+    transition: ease 0.5s;
     border: none;
     border-radius: 8px;
     box-shadow: 0px 4px 0px #B3A497;
@@ -386,6 +396,7 @@ h1 {
     width: 101px;
     height: 64px;
     color: #434A59;
+    transition: ease 0.5s;
     font-size: $resultInputFontSizeMobile;
     font-weight: $mainWeight;
     cursor: $customCursor;
@@ -400,6 +411,7 @@ h1 {
 
 .btn.btn-symb {
     color: #434A59;
+    transition: ease 0.5s;
     font-size: $resultInputFontSizeMobile;
     font-weight: $mainWeight;
     cursor: $customCursor;
@@ -415,6 +427,7 @@ h1 {
     color: $basicWhiteColor;
     background-color: #647198;
     box-shadow: 0px 4px 0px #414E73;
+    transition: ease 0.5s;
     cursor: $customCursor;
     &:hover{
         background-color: #A2B2E1;
