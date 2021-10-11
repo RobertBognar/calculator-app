@@ -19,4 +19,21 @@ function valueUpdated() {
 }
 valueUpdated();
 
-//Enabling Calculator Key Numbers
+//Function Creating & Calling For Enabling Calculator Number Keys
+
+function displayNumbers() {
+    for (let i = 0; i < numberButtons.length; i++) {
+
+    }
+}
+displayNumbers();
+
+//Function Creating & Calling For Enabling Calculator Symbol Keys
+
+//Delete Button Event Listener
+
+//Reset Button Event Listener
+
+//Calculate Button
+
+
