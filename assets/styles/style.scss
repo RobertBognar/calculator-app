@@ -48,9 +48,9 @@ body {
         padding-top: 100px;
     }
     @include mobile {
-        width: 100%;
-        padding-top: 20px;
-        margin-left: 72px;
+        width: 90%;
+        margin-right: 38px;
+        overflow-x: hidden;
     }
 }
 
@@ -59,6 +59,12 @@ body {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 24px;
+    p {
+        letter-spacing: 1px;
+    }
+    @include mobile {
+        padding-bottom: 6px;
+    }
 }
 
 h1 {
@@ -155,12 +161,15 @@ h1 {
     text-align: right;
     padding-top: 24px;
     padding-bottom: 8px;
-    border-radius: 8px 8px 0px 0px;
+    border-radius: 12px 12px 0px 0px;
+    @include mobile {
+        
+    }
 }
 
 #display-container {
     margin-bottom: 24px;
-    border-radius: 0px 0px 8px 8px;
+    border-radius: 0px 0px 12px 12px;
     color: $basicWhiteColor;
     padding-top: 2px;
     padding-right: 24px;
@@ -168,6 +177,13 @@ h1 {
     span {
         font-size: $resultInputFontSize;
         white-space: nowrap;
+    }
+    @include mobile {
+        height: 1px;
+        padding-top: -12px;
+        span {
+            font-size: $resultInputFontSizeMobile;
+        }
     }
 }
 //Keypad styling
@@ -178,13 +194,16 @@ h1 {
     padding: 24px;
     column-gap: 20px;
     row-gap: 24px;
-    border-radius: 8px;
+    border-radius: 12px;
     grid-template-areas:
     "btn btn btn btn"
     "btn btn btn btn"
     "btn btn btn btn"
     "btn btn btn btn"
     "reset reset equal equal";
+    @include mobile {
+        margin-top: 8%;
+    }
 }
 
 #btn-reset {
@@ -207,6 +226,9 @@ h1 {
     }
     &:active {
         box-shadow: 0px 3px 0px #93261A;
+    }
+    @include mobile  {
+        width: 100%;
     }
 }
 
@@ -245,6 +267,9 @@ h1 {
     cursor: $customCursor;
     &:hover {
         background-color: $basicWhiteColor;
+    }
+    @include mobile {
+        width: 110%;
     }
 }
 
