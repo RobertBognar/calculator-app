@@ -187,9 +187,11 @@ h1 {
     color: $basicWhiteColor;
     font-size: $themeFontSize;
     p {
-        margin: 6px 16px;
+        margin-top: 10px;
+        margin-right: 10px;
         @include mobile {
             padding-top: 20px;
+            margin-top: 4px;
         }
     }
 }

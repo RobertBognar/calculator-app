@@ -240,12 +240,14 @@ h1 {
 }
 
 .toggle-container p {
-  margin: 6px 16px;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
 @media (max-width: 375px) {
   .toggle-container p {
     padding-top: 20px;
+    margin-top: 4px;
   }
 }
 
