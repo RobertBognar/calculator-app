@@ -41,13 +41,14 @@ body {
 }
 
 .container {
-    margin-top: 28px;
+    margin-top: 4px;
     margin-left: 10%;
     @include tablet {
         margin-right: 12%;
         padding-top: 100px;
     }
     @include mobile {
+        margin-top: 22px;
         width: 90%;
         margin-right: 38px;
         overflow-x: hidden;

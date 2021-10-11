@@ -33,7 +33,7 @@ body {
 }
 
 .container {
-  margin-top: 28px;
+  margin-top: 4px;
   margin-left: 10%;
 }
 
@@ -46,6 +46,7 @@ body {
 
 @media (max-width: 375px) {
   .container {
+    margin-top: 22px;
     width: 90%;
     margin-right: 38px;
     overflow-x: hidden;
