@@ -6,6 +6,7 @@ const body = document.querySelector('body');
 const screen = document.getElementById('display');
 const secondScreen = document.getElementById('display-second');
 const displayInput = document.getElementById('display-input');
+const displayContainer = document.getElementById('display-container');
 const numberButtons = document.getElementById('btn-num');
 const symbolButtons = document.getElementById('btn-symb');
 const deleteButton = document.getElementById('btn-del');
@@ -20,13 +21,6 @@ function valueUpdated() {
 valueUpdated();
 
 //Function Creating & Calling For Enabling Calculator Number Keys
-
-function displayNumbers() {
-    for (let i = 0; i < numberButtons.length; i++) {
-
-    }
-}
-displayNumbers();
 
 //Function Creating & Calling For Enabling Calculator Symbol Keys
 
