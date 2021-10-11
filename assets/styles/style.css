@@ -191,7 +191,7 @@ body {
 
 @media (max-width: 375px) {
   .container {
-    margin-top: 22px;
+    margin-top: 32px;
     width: 90%;
     margin-right: 40px;
     overflow-x: hidden;
@@ -354,23 +354,31 @@ h1 {
 
 #display-container {
   margin-bottom: 24px;
-  border-radius: 0px 0px 12px 12px;
+  border-radius: 12px 12px 12px 12px;
   color: #FEFEFE;
   -webkit-transition: ease 0.5s;
   transition: ease 0.5s;
   padding-top: 2px;
   padding-right: 24px;
-  height: 80px;
+  height: 128px;
 }
 
 #display-container span {
+  position: relative;
+  top: 40px;
   font-size: 48px;
   white-space: nowrap;
 }
 
 @media (max-width: 375px) {
+  #display-container span {
+    top: 28px;
+  }
+}
+
+@media (max-width: 375px) {
   #display-container {
-    height: 1px;
+    height: 88px;
     padding-top: -12px;
   }
   #display-container span {
