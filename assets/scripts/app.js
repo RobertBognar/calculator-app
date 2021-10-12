@@ -8,8 +8,10 @@ const keypad = document.querySelector('.keypad');
 const inputDisplay = document.getElementById('display-input');
 const deleteButton = document.getElementById('#btn-del');
 const resetButton = document.getElementById('#btn-reset');
-// const popMessage = 'Press Reset Button Before You Start Doing Your Math :)';
-// window.alert(`${popMessage}`);
+const popMessage = 'Press RESET BUTTON/X On Keyboard For Display Reset! Press C On Keyboard For Deleting Single Digits!';
+const secondPopMessage = 'Enjoy! :)';
+window.alert(`${popMessage}`);
+window.alert(`${secondPopMessage}`);
 
 //General Function For Screen Update Values & Initializing
 function valueUpdated() {
@@ -52,7 +54,7 @@ function calculate(param) {
             inputDisplay.value = '0';
             break;
         //Defining Cases
-        case 'd':
+        case 'c':
             inputDisplay.value = inputDisplay.value.toString().slice(0, -1);
             if (!operator || operator) {
                 num1 = inputDisplay.value;
