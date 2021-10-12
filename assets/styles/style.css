@@ -419,8 +419,8 @@ h1 {
 }
 
 #btn-reset:active {
-  -webkit-transform: scale(0.92);
-          transform: scale(0.92);
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
 }
 
 @media (max-width: 375px) {
@@ -487,6 +487,8 @@ h1 {
 #btn-reset:active {
   -webkit-box-shadow: 0px 3px 0px #414E73;
           box-shadow: 0px 3px 0px #414E73;
+  -webkit-transform: scale(0.92);
+          transform: scale(0.92);
 }
 
 @media (max-width: 375px) {
@@ -526,8 +528,8 @@ h1 {
 }
 
 .btn.btn-num:active {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  -webkit-transform: scale(0.92);
+          transform: scale(0.92);
 }
 
 @media (max-width: 375px) {
@@ -547,8 +549,8 @@ h1 {
 }
 
 .btn.btn-symb:active {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  -webkit-transform: scale(0.92);
+          transform: scale(0.92);
 }
 
 .btn.btn-symb:hover {
@@ -578,8 +580,8 @@ h1 {
 #btn-del:active {
   -webkit-box-shadow: 0px 3px 0px #414E73;
           box-shadow: 0px 3px 0px #414E73;
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  -webkit-transform: scale(0.92);
+          transform: scale(0.92);
 }
 
 @media (max-width: 375px) {
