@@ -6,8 +6,8 @@ const body = document.querySelector('body');
 const screen = document.getElementById('display');
 const keypad = document.querySelector('.keypad');
 const inputDisplay = document.getElementById('display-input');
-const popMessage = 'Press Reset Button Before You Start Doing Your Math :)';
-window.alert(`${popMessage}`);
+// const popMessage = 'Press Reset Button Before You Start Doing Your Math :)';
+// window.alert(`${popMessage}`);
 
 //General Function For Screen Update Values & Initializing
 function valueUpdated() {
@@ -57,23 +57,23 @@ function calculate(param) {
                 num2 = '';
             }
             break;
-        case 'add':
+        case '+':
             operator = '+';
             inputDisplay.value = `${num1}${operator}${num2}`;
             break;
-        case 'subtract':
+        case '-':
             operator = '-';
             inputDisplay.value = `${num1}${operator}${num2}`;
             break;
-        case 'multiply':
+        case '*':
             operator = '*';
             inputDisplay.value = `${num1}${operator}${num2}`;
             break;
-        case 'divide':
+        case '/':
             operator = '/';
             inputDisplay.value = `${num1}${operator}${num2}`;
             break;
-        case 'equal':
+        case '=':
             if (operator === '+') {
                 inputDisplay.value = Number(num1) + Number(num2);
                 num1 = inputDisplay.value;
