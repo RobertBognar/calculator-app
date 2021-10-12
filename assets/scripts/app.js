@@ -6,14 +6,9 @@ const body = document.querySelector('body');
 const screen = document.getElementById('display');
 const keypad = document.querySelector('.keypad');
 const inputDisplay = document.getElementById('display-input');
-const displayContainer = document.getElementById('display-container');
-const numberButtons = document.getElementById('btn-num');
-const symbolButtons = document.getElementById('btn-symb');
-const deleteButton = document.getElementById('btn-del');
-const resetButton = document.getElementById('btn-reset');
-const calculateButton = document.getElementById('calculate');
+const popMessage = 'Press Reset Button Before You Start Doing Your Math :)';
+window.alert(`${popMessage}`);
 
-// window.alert('PRESS RESET BUTTON BEFORE YOU START DOING MATH! :)');
 //General Function For Screen Update Values & Initializing
 function valueUpdated() {
     screen.textContent = inputDisplay.value;
