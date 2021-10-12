@@ -75,25 +75,25 @@ function calculate(param) {
             break;
         case 'equal':
             if (operator === '+') {
-                inputDisplay.value = parseFloat(num1) + parseFloat(num2);
+                inputDisplay.value = Number(num1) + Number(num2);
                 num1 = inputDisplay.value;
                 num2 = '';
                 operator = '';
             }
             if (operator === '-') {
-                inputDisplay.value = parseFloat(num1) - parseFloat(num2);
+                inputDisplay.value = Number(num1) - Number(num2);
                 num1 = inputDisplay.value;
                 num2 = '';
                 operator = '';
             }
             if (operator === '/') {
-                inputDisplay.value = parseFloat(num1) / parseFloat(num2);
+                inputDisplay.value = Number(num1) / Number(num2);
                 num1 = inputDisplay.value;
                 num2 = '';
                 operator = '';
             }
             if (operator === '*') {
-                inputDisplay.value = parseFloat(num1) * parseFloat(num2);
+                inputDisplay.value = Number(num1) * Number(num2);
                 num1 = inputDisplay.value;
                 num2 = '';
                 operator = '';
