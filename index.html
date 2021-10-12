@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>Calculator App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>calc</h1>
+            <div class="toggle-container">
+                <p>THEME</p>
+                <div class="toggle-wrapper">
+                    <input type="radio" name="toggle-theme" id="theme1" checked class="toggle-radio">
+                    <input type="radio" name="toggle-theme" id="theme2" class="toggle-radio">
+                    <input type="radio" name="toggle-theme" id="theme3" class="toggle-radio">
+                    <label for="theme1" class="toggle-label"><span>1</span></label>
+                    <label for="theme2" class="toggle-label"><span>2</span></label>
+                    <label for="theme3" class="toggle-label"><span>3</span></label>
+                    <div class="toggle-slider"></div>
+                </div>
+            </div>
+        </div>
+        <label for="display-input">Screen</label>
+        <div id="display-container">
+            <input type="text" id="display-input" value="0">
+            <span id="display">399,981</span>
+        </div>
+        <div class="keypad">
+            <button value="7" class="btn btn-num">7</button>
+            <button value="8" class="btn btn-num">8</button>
+            <button value="9" class="btn btn-num">9</button>
+            <button value="c" class="btn" id="btn-del">DEL</button>
+            <button value="4" class="btn btn-num">4</button>
+            <button value="5" class="btn btn-num">5</button>
+            <button value="6" class="btn btn-num">6</button>
+            <button value="+" class="btn btn-symb"> + </button>
+            <button value="1" class="btn btn-num">1</button>
+            <button value="2" class="btn btn-num">2</button>
+            <button value="3" class="btn btn-num">3</button>
+            <button value="-" class="btn btn-symb"> - </button>
+            <button value="." class="btn btn-num">.</button>
+            <button value="0" class="btn btn-num">0</button>
+            <button value="/" class="btn btn-symb"> / </button>
+            <button value="*" class="btn btn-symb"> x </button>
+            <button value="x" class="btn" id="btn-reset">RESET</button>
+            <button value="=" class="btn" id="calculate">=</button>
+        </div>
+    </div>
+    <script src="./assets/scripts/app.js"></script>
+    <script src="./assets/scripts/themes.js"></script>
+    <script src="./assets/scripts/buttons.js"></script>
+</body>
+
+</html>

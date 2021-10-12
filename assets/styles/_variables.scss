@@ -1,0 +1,69 @@
+//Fonts 
+$mainFont: 'Spartan', sans-serif;
+$mainWeight: 700;
+$calcFontSize: 32px;
+$themeFontSize: 12px;
+$themeNumbersFontSize: 12px;
+$resultInputFontSize: 48px;
+$resultInputFontSizeMobile: 32px;
+$delResEqualFontSize: 20px;
+$delResEqualFontSizeMobile: 16px;
+$numbersMobileFontSize: 28px;
+
+//Colors
+$basicWhiteColor: #FEFEFE;
+
+//First Theme Colors
+$mainBackground: #3A4663;
+$toggleBackground: #242D44;
+$screenBackground: #181F33;
+$keyBackgroundFirst: #647198;
+$keyShadowFirst: #414E73;
+$keyBackgroundRed: #F96B5B;
+$keyShadowRed: #93261A;
+$keyBackground: #EAE3DC;
+$keyShadow: #B3A497;
+$textDark: #434A59;
+$darkThemeSliderColor: #D03F2F;
+$darkThemeSliderHover: #F96B5B;
+
+//Second Theme Colors
+$mainBackgroundSecondTheme: #E6E6E6;
+$toggleBackgroundSecondTheme: #D2CDCD;
+$screenBackgroundSecondTheme: #FFFFFF;
+$keyBackgroundFirstSecondTheme: #378187;
+$keyShadowFirstSecondTheme: #1B6066;
+$keyBackgroundRedSecondTheme: #C85402;
+$lightThemeSlideHover: #FF8A38;
+$keyShadowRedSecondTheme: #873901;
+$keyBackgroundSecondTheme: #E5E4E1;
+$keyShadowSecondTheme: #A79E91;
+$textDarkSecondTheme: #36362C;
+$deleteResetButtonHoverSecondTheme: #62B5BC;
+$calculateButtonHoverSecondTheme: #FF8A38;
+
+//Third Theme Colors
+$mainBackgroundThirdTheme: #17062A;
+$toggleBackgroundThirdTheme: #1E0936;
+$screenBackgroundThirdTheme: #1E0936;
+$keyBackgroundFirstThirdTheme: #56077C;
+$keyShadowFirstThirdTheme: #BE15F4;
+$keyBackgroundBlue: #00DED0;
+$keyBackgroundBlueShadow: #6CF9F1;
+$toggleSliderHoverThirdTheme: #93FFF8;
+$keyShadowBlue: #6CF9F1;
+$keyBackgroundThirdTheme: #331C4D;
+$keyShadowThirdTheme: #881C9E;
+$textYellowLight: #FFE53D;
+$textDarkThirdTheme: #1A2327;
+$numberSymbolsHoverColor: #6C34AC;
+$resetDelPurpleHoverColor: #8631AF;
+$calculateColor: #1A2327;
+
+//Custom cursor image
+$customCursor: url("../images/pointer.png"), pointer;
+
+//Responsivnes
+$tablet: 768px;
+$mobile: 375px;
+
