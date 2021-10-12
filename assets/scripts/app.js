@@ -13,7 +13,7 @@ const deleteButton = document.getElementById('btn-del');
 const resetButton = document.getElementById('btn-reset');
 const calculateButton = document.getElementById('calculate');
 
-window.alert('PRESS RESET BUTTON BEFORE YOU START DOING MATH! :)');
+// window.alert('PRESS RESET BUTTON BEFORE YOU START DOING MATH! :)');
 //General Function For Screen Update Values & Initializing
 function valueUpdated() {
     screen.textContent = inputDisplay.value;
@@ -107,7 +107,3 @@ function calculate(param) {
     }
     valueUpdated();
 }
-
-
-
-
