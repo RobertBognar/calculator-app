@@ -7,6 +7,3 @@ window.addEventListener('keypress', (e) => {
     calculate(e.key);
 });
 
-
-
-
