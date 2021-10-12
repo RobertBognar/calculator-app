@@ -2,10 +2,11 @@
 keypad.addEventListener('click', function (e) {
     calculate(e.target.value);
 });
-
-body.addEventListener('keypress', (e) => {
+//Enabling Keyboard Input
+window.addEventListener('keypress', (e) => {
     calculate(e.key);
-})
+});
+
 
 
 

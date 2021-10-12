@@ -6,6 +6,8 @@ const body = document.querySelector('body');
 const screen = document.getElementById('display');
 const keypad = document.querySelector('.keypad');
 const inputDisplay = document.getElementById('display-input');
+const deleteButton = document.getElementById('#btn-del');
+const resetButton = document.getElementById('#btn-reset');
 // const popMessage = 'Press Reset Button Before You Start Doing Your Math :)';
 // window.alert(`${popMessage}`);
 
@@ -43,14 +45,14 @@ function calculate(param) {
             inputDisplay.value = `${num1}${operator}${num2}`;
             break;
         //Reset Attributes
-        case 'reset':
+        case 'x':
             num1 = '';
             num2 = '';
             operator = '';
             inputDisplay.value = '0';
             break;
         //Defining Cases
-        case 'delete':
+        case 'd':
             inputDisplay.value = inputDisplay.value.toString().slice(0, -1);
             if (!operator || operator) {
                 num1 = inputDisplay.value;
